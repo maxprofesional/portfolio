@@ -2,6 +2,18 @@
   display: none;
 }
 
+.logo-personal {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: -2%;
+}
+.logo-personal::before {
+  content: url(/assets/svg/personal.svg);
+}
+
 header {
   padding-top: 36px;
 }
@@ -15,17 +27,6 @@ header .main-header {
   header .main-header {
     gap: 107px;
   }
-}
-header .main-header .logo-personal {
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  letter-spacing: -2%;
-}
-header .main-header .logo-personal::before {
-  content: url(/assets/svg/personal.svg);
 }
 header .mobile {
   display: none;
@@ -95,6 +96,11 @@ section:nth-child(4) {
 
 section:nth-child(6) {
   background-color: black;
+}
+
+section:nth-child(8) {
+  background-color: black;
+  padding: 30px 0;
 }
 
 .normal {
@@ -594,4 +600,11 @@ section:nth-child(6) {
 
 .experience-container .experience-card:hover {
   background-color: #242424;
+}
+
+.footer-white {
+  color: white;
+}
+.footer-white::before {
+  content: url(/assets/svg/personal-white.svg);
 }

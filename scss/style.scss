@@ -21,6 +21,17 @@ $hoverColorShadow: #242424;
 .mobile {
   display: none;
 }
+.logo-personal {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: -2%;
+  &::before {
+    content: url(/assets/svg/personal.svg);
+  }
+}
 header {
   padding-top: 36px;
   .main-header {
@@ -31,17 +42,6 @@ header {
       gap: 107px;
     }
     align-items: center;
-    .logo-personal {
-      display: flex;
-      align-items: center;
-      font-size: 20px;
-      line-height: 24px;
-      font-weight: 700;
-      letter-spacing: -2%;
-      &::before {
-        content: url(/assets/svg/personal.svg);
-      }
-    }
   }
   .mobile {
     display: none;
@@ -99,6 +99,11 @@ section:nth-child(4) {
 
 section:nth-child(6) {
   background-color: black;
+}
+
+section:nth-child(8) {
+  background-color: black;
+  padding: 30px 0;
 }
 
 .normal {
@@ -554,4 +559,11 @@ body {
 
 .experience-container .experience-card:hover {
   background-color: $hoverColorShadow;
+}
+
+.footer-white {
+  color: white;
+  &::before {
+    content: url(/assets/svg/personal-white.svg);
+  }
 }
